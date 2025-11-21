@@ -8,7 +8,7 @@ const lora = Lora({
 
 export default function About() {
   return (
-    <div className={`${lora.className} container mx-auto px-4 mb-[18px] leading-[40px] opacity-0 animate-fade-in`}>
+    <div className={`${lora.className} mx-auto max-w-[940px] px-8 md:px-16 lg:px-32 py-8 mb-[18px] leading-[40px] opacity-0 animate-fade-in`}>
       <p className="mb-6">
         I'm a developer based in Santa Barbara, CA who's highly interested in
         people brought together by technology. Initially, I started out by
@@ -18,20 +18,19 @@ export default function About() {
         of times.
       </p>
       <p className="mb-6">
-        Currently, I study <strong>statistics</strong> and{" "}
-        <strong>data science</strong> at the University of California, Santa
-        Barbara. As part of my interests in how people interact with tech and
-        AI, I've been conducting research for UC Santa Barbara&apos;s{" "}
-        <strong>Human-AI Experience Lab (HAX)</strong>, under the direction of
-        Dr. Misha Sra.{" "}
+        Currently, I study <strong>statistics and data science</strong> at the 
+        University of California, Santa Barbara. As part of my interests in how 
+        people interact with tech and AI, I've been conducting research for UC 
+        Santa Barbara&apos;s{" "} <strong>Human-AI Experience Lab (HAX)</strong>, 
+        under the direction of Dr. Misha Sra. Read more about our research {" "}
         <strong>
           <a
-            href="https://your-research-link-here"
-            className="underline"
+            href="https://sites.cs.ucsb.edu/~sra/"
+            className="transition-colors duration-200 hover:text-[#91a7ad]"
             target="_blank"
             rel="noreferrer"
           >
-            Read more about our research here.
+            here.
           </a>
         </strong>
       </p>
@@ -42,9 +41,13 @@ export default function About() {
       </p>
 
       <p>
-        Reach out ― {" "}
+        Let's talk ― {" "}
         <strong>
-          <a href="mailto:connect@janelle.dev">connect@janelle.dev</a>
+          <a 
+          href="mailto:connect@janelle.dev"
+          className="transition-colors duration-200 hover:text-[#91a7ad]"
+          >
+            connect@janelle.dev</a>
         </strong>
       </p>
     </div>

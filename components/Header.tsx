@@ -22,8 +22,15 @@ const Header = () => {
         </div>
       </div>
       <nav className="flex items-center space-x-6 text-sm tracking-[1px]">
-        <Link href="/page" className="uppercase hover:opacity-60">Home</Link>
-        <Link href="/" className="uppercase hover:opacity-60">About</Link>
+          {headerNavLinks.map((link) => (
+          <Link
+            key={link.title}
+            href={link.href}
+            className="uppercase transition-colors duration-200 ease-in-out hover:text-[#91a7ad]"
+          >
+            {link.title}
+          </Link>
+          ))}
       </nav>
     </header>
   );

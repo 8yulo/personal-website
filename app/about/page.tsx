@@ -43,10 +43,10 @@ export default function About() {
         Let's talk ― {" "}
         <strong>
           <a 
-          href="mailto:connect@janelle.dev"
+          href="mailto:contact@janelle.dev"
           className="transition-colors duration-200 hover:text-[#91a7ad]"
           >
-            connect@janelle.dev</a>
+            contact@janelle.dev</a>
         </strong>
       </p>
     </div>

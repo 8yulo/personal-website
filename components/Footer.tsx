@@ -13,7 +13,7 @@ export default function Footer() {
               <div key={link.title} className="inline-block">
                 <Link
                   href={link.ref}
-                  className="inline-block mx-2 opacity-40 hover:opacity-80 transition-opacity duration-200">
+                  className="inline-block mx-1.5 opacity-40 hover:opacity-80 transition-opacity duration-200">
                   <Image
                     src={link.src}
                     alt={link.title}

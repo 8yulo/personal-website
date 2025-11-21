@@ -11,7 +11,9 @@ const Header = () => {
     <header className="py-8">
       <div className="mx-auto max-w-[940px] px-8 md:px-16 lg:px-32 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
+          
+          
+          {/* <Link href="/" className="flex items-center">  */}
           <div className="w-12 h-12 rounded-full overflow-hidden">
             <Image
               src="/images/site_profile.png"
@@ -20,22 +22,13 @@ const Header = () => {
               height={48}
               className="object-cover"/>
           </div>
-            <h2 className="ml-6 text-[14px] ml:px-24  tracking-[1.5px] uppercase">
-              {siteMetadata.author}
-          </h2>
-         </Link>
+         {/* </Link> */}
         </div>
 
         <nav className="flex items-center space-x-8 text-sm tracking-[1px]">
-          {headerNavLinks.map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="uppercase transition-colors duration-200 hover:text-[#91a7ad]"
-            >
-              {link.title}
-            </Link>
-          ))}
+          <h2 className="uppercase transition-colors duration-200 hover:text-[#91a7ad]">
+              {siteMetadata.author}
+          </h2>             
         </nav>
       </div>
     </header>

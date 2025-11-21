@@ -8,8 +8,8 @@ const lora = Lora({
 
 export default function About() {
   return (
-    <div className={`${lora.className} w-[600px] mb-[18px] leading-[32px]`}>
-      <p className="mb-4">
+    <div className={`${lora.className} container mx-auto px-4 mb-[18px] leading-[40px] opacity-0 animate-fade-in`}>
+      <p className="mb-6">
         I'm a developer based in Santa Barbara, CA who's highly interested in
         people brought together by technology. Initially, I started out by
         teaching myself how to 3D model and create environments on the Roblox
@@ -17,8 +17,7 @@ export default function About() {
         creations together. Since then, my creations have been played millions
         of times.
       </p>
-
-      <p className="mb-4">
+      <p className="mb-6">
         Currently, I study <strong>statistics</strong> and{" "}
         <strong>data science</strong> at the University of California, Santa
         Barbara. As part of my interests in how people interact with tech and
@@ -36,15 +35,14 @@ export default function About() {
           </a>
         </strong>
       </p>
-
-      <p className="mb-4">
+      <p className="mb-6">
         Outside of tech, I highly enjoy baking, weightlifting, going for runs,
         meeting new people, and exchanging ideas – if you do any of these
         things, let&apos;s connect :)
       </p>
 
       <p>
-        Reach out ―{" "}
+        Reach out ― {" "}
         <strong>
           <a href="mailto:connect@janelle.dev">connect@janelle.dev</a>
         </strong>

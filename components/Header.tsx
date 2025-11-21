@@ -7,33 +7,35 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Header = () => {
-
-    return (
-    <header className="flex items-center justify-between py-8 px-4 sm:px-6 lg:px-0">
-      <div className="flex items-center">
-        <div className="w-12 h-12 rounded-full overflow-hidden">
-          <Image
-            src="/images/site_profile.png"
-            alt="Profile"
-            width={48}
-            height={48}
-            className="object-cover"
-          />
+  return (
+    <header className="py-8">
+      <div className="mx-auto max-w-[940px] px-8 md:px-16 lg:px-32 flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="w-12 h-12 rounded-full overflow-hidden">
+            <Image
+              src="/images/site_profile.png"
+              alt="Profile"
+              width={48}
+              height={48}
+              className="object-cover"
+            />
+          </div>
         </div>
-      </div>
-      <nav className="flex items-center space-x-6 text-sm tracking-[1px]">
+
+        <nav className="flex items-center space-x-8 text-sm tracking-[1px]">
           {headerNavLinks.map((link) => (
-          <Link
-            key={link.title}
-            href={link.href}
-            className="uppercase transition-colors duration-200 ease-in-out hover:text-[#91a7ad]"
-          >
-            {link.title}
-          </Link>
+            <Link
+              key={link.title}
+              href={link.href}
+              className="uppercase transition-colors duration-200 hover:text-[#91a7ad]"
+            >
+              {link.title}
+            </Link>
           ))}
-      </nav>
+        </nav>
+      </div>
     </header>
   );
-}
+};
 
 export default Header;

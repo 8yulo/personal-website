@@ -11,11 +11,10 @@ export default function About() {
     <div className={`${lora.className} mx-auto max-w-[940px] px-8 md:px-16 lg:px-32 py-8 mb-[18px] leading-[40px] opacity-0 animate-fade-in`}>
       <p className="mb-6">
         I'm a developer based in Santa Barbara, CA who's highly interested in
-        people brought together by technology. Initially, I started out by
-        teaching myself how to 3D model and create environments on the Roblox
-        platform, but realized learning how to program is what tied my
-        creations together. Since then, my creations have been played millions
-        of times.
+        people being brought together by technology. Initially, I started out 
+        by teaching myself how to 3D model and create environments on the Roblox
+        platform, but realized learning how to program is what tied my creations 
+        together. Since then, my creations have been played millions of times.
       </p>
       <p className="mb-6">
         Currently, I study <strong>statistics and data science</strong> at the 

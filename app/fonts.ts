@@ -12,6 +12,6 @@ export const merriweather = Merriweather({
 }); 
 
 export const mulish = Mulish({
-    weight: '600',
+    weight: ['300','600'],
     subsets: ["latin"],
 });

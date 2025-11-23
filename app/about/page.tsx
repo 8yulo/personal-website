@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Lora } from "next/font/google";
+import Image from "next/image";
+import { Lora, Mulish } from "next/font/google";
+import socialNavLinks from "@/app/data/socialNavLinks";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -40,15 +42,37 @@ export default function About() {
       </p>
 
       <p>
-        Let's talk ― {" "}
+        Get in touch ― {" "}
         <strong>
           <a 
           href="mailto:contact@janelle.dev"
-          className="transition-colors duration-200 hover:text-[#91a7ad]"
+          className="transition-colors duration-200 hover:text-[#91a7ad] pb-36"
           >
             contact@janelle.dev</a>
         </strong>
       </p>
+        <h2 className="font-mulish text-[18px] pt-8 leading-6 font-light tracking-[2.5px] uppercase text-[#a8a8a8] mb-3">
+        socials
+      </h2>
+      <nav className="w-full text-left uppercase tracking-[1.5px] font-semibold">
+          <div className="inline-block">
+            {socialNavLinks.map((link) => (
+              <div key={link.title} className="inline-block">
+                <Link
+                  href={link.ref}
+                  className="inline-block pr-4 opacity-40 hover:opacity-80 transition-opacity duration-200">
+                  <Image
+                    src={link.src}
+                    alt={link.title}
+                    width={25}
+                    height={25}
+                    className="inline-block"
+                  />
+                </Link>
+              </div>
+              ))}
+          </div>
+        </nav>
     </div>
   );
 }

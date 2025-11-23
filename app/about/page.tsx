@@ -40,7 +40,7 @@ export default function About() {
       </p>
 
       <p>
-        Let's talk ― {" "}
+        Get in touch ― {" "}
         <strong>
           <a 
           href="mailto:connect@janelle.dev"

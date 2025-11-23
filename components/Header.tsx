@@ -19,10 +19,9 @@ const Header = () => {
               width={48}
               height={48}
               className="object-cover"/>
-          </div>
-            <h2 className="ml-6 text-[14px] ml:px-24  tracking-[1.5px] uppercase">
-              {siteMetadata.author}
-          </h2>
+          </div>    
+            {/*<h2 className="ml-6 text-[14px] ml:px-24  tracking-[1.5px] uppercase">
+              </h2>*/} 
          </Link>
         </div>
 

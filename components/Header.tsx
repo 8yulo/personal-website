@@ -16,7 +16,7 @@ const Header = () => {
           {/* <Link href="/" className="flex items-center">  */}
           <div className="w-12 h-12 rounded-full overflow-hidden">
             <Image
-              src="public/images/site_profile.png"
+              src="/public/images/site_profile.png"
               alt="Profile"
               width={48}
               height={48}

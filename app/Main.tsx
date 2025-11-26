@@ -13,12 +13,12 @@ const lora = Lora({
 export default function Home() {
   return (
     <section className="bg-white">
-      <div className="w-full bg-[#fafafa] py-[120px] px-3 text-center">
+      <div className="w-full bg-[#f0f0f0] py-[120px] px-3 text-center">
         <div className="mx-auto max-w-[728px] md:max-w-[940px] px-4 text-left animate-fade-in-up">
-          <h1 className={`${lora.className} text-[#333] text-4xl md:text-[56px] mb-[20px]`}>
+          <h1 className={`${lora.className} text-[#333] text-4xl text-[56px] mb-[20px]`}>
             Janelle Yulo
           </h1>
-          <h2 className={`${lora.className} text-[#5e747a] text-left text-[20px] font-normal leading-[20px] normal-case mb-[20px]`}>
+          <h2 className={`${lora.className} text-[#5e747a] text-left text-[20px] font-normal leading-2 normal-case mb-[20px]`}>
             Game developer and statistics student at UC Santa Barbara
           </h2>
           

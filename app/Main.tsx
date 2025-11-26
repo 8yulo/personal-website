@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Lora, Mulish} from "next/font/google";
 import Image from "next/image";
-import socialNavLinks from "@/app/data/socialNavLinks";
+import SocialLinks from "@/components/SocialLinksSection";
 import siteMetadata from "@/app/data/siteMetadata";
 
 
@@ -22,26 +22,9 @@ export default function Home() {
             Game developer and statistics student at UC Santa Barbara
           </h2>
           
-      <div className="w-full text-left uppercase tracking-[1.5px] font-semibold">
-
-        <nav className="inline-block mb-[36px]">
-          {socialNavLinks.map((link) => (
-          <div key={link.title} className="inline-block">
-            <Link
-              href={link.ref}
-              className="inline-block mr-[12px] opacity-40 hover:opacity-80 transition-opacity duration-200">
-              <Image
-                src={link.src}
-                alt={link.title}
-                width={24}
-                height={24}
-                className="inline-block"
-              />
-            </Link>
-          </div>
-          ))} 
-        </nav>
-        </div>
+      <div className="w-full text-left uppercase tracking-[1.5px] font-semibold mb-[36px]">
+          <SocialLinks />
+      </div>
 
               
             <a

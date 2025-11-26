@@ -8,7 +8,8 @@ const lora = Lora({
 
 export default function About() {
   return (
-    <div className={`${lora.className} mx-auto max-w-[940px] px-8 md:px-16 lg:px-32 py-8 mb-[18px] leading-[40px] opacity-0 animate-fade-in`}>
+    <div className={`${lora.className} mx-auto max-w-[940px] px-8 md:px-16 lg:px-0 py-[32px] leading-[40px] opacity-0 animate-fade-in`}>
+      {/* px-8 md:px-16 lg:px-32 */}
       <p className="mb-6">
         I'm a developer based in Santa Barbara, CA who's highly interested in
         people being brought together by technology. Initially, I started out 

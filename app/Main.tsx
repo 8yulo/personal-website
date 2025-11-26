@@ -13,16 +13,16 @@ const lora = Lora({
 export default function Home() {
   return (
     <section className="bg-white">
-      <div className="w-full bg-[#f0f0f0] py-[120px] px-3 text-center">
-        <div className="mx-auto max-w-[728px] md:max-w-[940px] px-4 text-left animate-fade-in-up">
+      <div className="w-full bg-[#f0f0f0] py-[120px] text-center sm:text-left">
+        <div className="mx-auto max-w-[940px] px-8 md:px-16 lg:px-0 animate-fade-in-up">
           <h1 className={`${lora.className} text-[#333] text-4xl text-[56px] mb-[20px]`}>
             Janelle Yulo
           </h1>
-          <h2 className={`${lora.className} text-[#5e747a] text-left text-[20px] font-normal leading-2 normal-case mb-[20px]`}>
+          <h2 className={`${lora.className} text-[#5e747a] text-[20px] font-normal leading-2 normal-case mb-[20px]`}>
             Game developer and statistics student at UC Santa Barbara
           </h2>
           
-      <div className="w-full text-left uppercase tracking-[1.5px] font-semibold mb-[36px]">
+      <div className="w-full uppercase tracking-[1.5px] font-semibold mb-[36px]">
           <SocialLinks />
       </div>
 

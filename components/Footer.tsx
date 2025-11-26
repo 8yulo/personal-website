@@ -9,21 +9,23 @@ export default function Footer() {
       
        <nav className="w-full text-center uppercase tracking-[1.5px] font-semibold">
           <div className="inline-block">
-            {socialNavLinks.map((link) => (
-              <div key={link.title} className="inline-block">
-                <Link
-                  href={link.ref}
-                  className="inline-block mx-2 opacity-40 hover:opacity-80 transition-opacity duration-200">
-                  <Image
-                    src={link.src}
-                    alt={link.title}
-                    width={25}
-                    height={25}
-                    className="inline-block"
-                  />
-                </Link>
-              </div>
-              ))}
+          
+          {socialNavLinks.map((link) => (
+            <div key={link.title} className="inline-block">
+              <Link
+                href={link.ref}
+                className="inline-block mx-[12px] opacity-40 hover:opacity-80 transition-opacity duration-200">
+                <Image
+                  src={link.src}
+                  alt={link.title}
+                  width={24}
+                  height={24}
+                  className="inline-block"
+                />
+              </Link>
+            </div>
+          ))} 
+
           </div>
         </nav>
 

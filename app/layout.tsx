@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html className={lora.className} suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col">
-        <main className="flex-grow">
-          <SectionContainer>
-            < Header />
-            {children}
-          </SectionContainer>
-        </main>
+        <body className="min-h-screen flex flex-col">
+          < Header />
+          <main className="flex-grow">
+            <SectionContainer>
+              {children}
+            </SectionContainer>
+          </main>
         <Footer />
       </body>
     </html>
